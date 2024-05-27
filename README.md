@@ -1,7 +1,7 @@
 
 ## Motivation
 
-The aim is to estimate the dynamic trend in a specific target variable from a standard climate change simulation (comparable to observations). The result of the dynamic trend estimation is going to be evaluated with a counterfactual piControl-nudged simulation that is supposed to only contain the dynamic trend of the cliamte change simulation (see below).
+The aim is to estimate the dynamic trend in a specific target variable from a standard climate change simulation (comparable to observations). The result of the dynamic trend estimation is going to be evaluated with a counterfactual piControl-nudged simulation that is supposed to only contain the dynamic trend of the climate change simulation (see below).
 
 ## Data
 
@@ -29,7 +29,7 @@ For each of the standard simulations from above there is one simulation in the p
 
 ## Locations
 
-We test our methods on land grid-cells (?) around the northern hemispheric mid-latitudes. Grid-cells are located at around 50°N and spaced in 10° longitude steps. 
+We test our methods on land grid-cells (?) around the northern hemispheric mid-latitudes. Grid-cells are located at around 40°N, 50°N, 60°N and spaced in 10° longitude steps. 
 
 ![alt text](locations.png "Title")
 
@@ -46,7 +46,7 @@ Latitudes, longitudes as well as the respective indices in the CESM2 output grid
 ## Target variables
 
 1) **TREFHT** - surface air temperature
-2) *optional* **TOTPREC** - total preciptiation
+2) *optional* **TOTPREC** - total precipitation
 
 ## Seasons
 
@@ -59,11 +59,19 @@ Latitudes, longitudes as well as the respective indices in the CESM2 output grid
 2) *optional* seasonal daily maximum 
 3) *optional* seasonal daily minimum 
 
-## Desired output (trends):
+## Periods
 
-One csv table for each combination of target variable, season and statistic.
+We test the applicability of methods that would be interesting to apply on observation (reanalysis) data. Therefore the following two periods would be of interest:
+1) 1979-2023 - sattelite era
+2) 1950-2023 - "long" observation records
 
-Seasonal trends over the period 1979-2023
+## Output
+
+### Calculated trends
+
+One csv table for each combination of target variable, season, statistic and period.
+
+Seasonal trends
 * **reproduced total trend** (*should be similar to climChange run on which was trained*)
 * **dynamic trend** (*should be similar to corresponding piControl-nudged run*)
 * *optional* **thermodynamic trend**
@@ -78,10 +86,15 @@ Seasonal trends over the period 1979-2023
 | 50.4188 |    20 |  1400 |          ?       |      ?        |     optional        |     optional      |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
-See example output file: **`TREFHT_JJA_seasmean.csv`**
+See example output file: **`TREFHT_JJA_seasmean_1979-2023.csv`**
 
-## Daily output (optional):
+### Daily time-series (optional but preferred):
 
-If applicable/possible it would be even better if you could save the daily output of you estimates.
+If applicable/possible it would be even better if you could save the daily output of you estimates. If possible, save daily outputs in a netcdf file for each combination of target variable, season and period. Do as you want, if another format is easier for you.
 
-See example output file: **`TREFHT_JJA.nc`**
+Here is a suggestion for the netcdf file:
+
+* lat: 3
+* lon: 26
+* run: 3
+* time: depending on period
