@@ -78,7 +78,10 @@ Seasonal trends over the period 1979-2023
 | 50.4188 |    20 |  1400 |          ?       |      ?        |     optional        |     optional      |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
+See example output file: **`TREFHT_JJA_seasmean.csv`**
 
 ## Daily output (optional):
 
 If applicable/possible it would be even better if you could save the daily output of you estimates.
+
+See example output file: **`TREFHT_JJA.nc`**
