@@ -19,7 +19,7 @@ In these runs greenhouse gas concentrations are rising over time leading to ther
 
 ### Nudged counterfactual simulations (piControl-nudged)
 
-For each of the standard simulations from above one simulation in the piControl setting (no greenhouse gas emissions). The simulations is nudged towards the wind fields throughout the whole atmosphere of the respective simulations from above.
+For each of the standard simulations from above there is one simulation in the piControl setting (no greenhouse gas emissions). The simulations is nudged towards the wind fields throughout the whole atmosphere of the respective simulations from above.
 
 | run | 1850-2100 |
 |:--|:--:|
