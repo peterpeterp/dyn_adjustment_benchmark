@@ -29,7 +29,7 @@ For each of the standard simulations from above one simulation in the piControl 
 
 ## Locations
 
-We test methods for land grid-cells (?) around the northern hemispheric mid-latitudes. Grid-cells are located at around 50°N and spaced in 10° longitude steps. 
+We test our methods on land grid-cells (?) around the northern hemispheric mid-latitudes. Grid-cells are located at around 50°N and spaced in 10° longitude steps. 
 
 ![alt text](locations.png "Title")
 
