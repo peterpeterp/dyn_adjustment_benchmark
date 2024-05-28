@@ -62,7 +62,7 @@ Latitudes, longitudes as well as the respective indices in the CESM2 output grid
 ## Periods
 
 We test the applicability of methods that would be interesting to apply on observation (reanalysis) data. Therefore the following two periods would be of interest:
-1) 1979-2023 - sattelite era
+1) 1979-2023 - satellite era
 2) 1950-2023 - "long" observation records
 
 ## Output
@@ -72,7 +72,7 @@ We test the applicability of methods that would be interesting to apply on obser
 One csv table for each combination of target variable, season, statistic and period.
 
 Seasonal trends
-* **reproduced total trend** (*should be similar to climChange run on which was trained*)
+* **reproduced total trend** (*should be similar to climChange run on which it was trained*)
 * **dynamic trend** (*should be similar to corresponding piControl-nudged run*)
 * *optional* **thermodynamic trend**
 * *optional* other decomposed trends you got from your method
@@ -92,7 +92,7 @@ See example output file: **`TREFHT_JJA_seasmean_1979-2023.csv`**
 
 If applicable/possible it would be even better if you could save the daily output of you estimates. If possible, save daily outputs in a netcdf file for each combination of target variable, season and period. Do as you want, if another format is easier for you.
 
-Here is a suggestion for the netcdf file:
+Here is a suggestion for the dimensions of the netcdf file:
 
 * lat: 3
 * lon: 26
