@@ -29,7 +29,7 @@ For each of the standard simulations from above there is one simulation in the p
 
 ## Locations
 
-We test our methods on land grid-cells (?) around the northern hemispheric mid-latitudes. Grid-cells are located at around 40°N, 50°N, 60°N and spaced in 10° longitude steps. 
+We test our methods on land grid-cells around the northern hemispheric mid-latitudes. Grid-cells are located at around 40°N, 50°N, 60°N and spaced in 10° longitude steps. We additionally added one grid-cell in Italy, Greece, England and Japan. 
 
 ![alt text](locations.png "Title")
 
@@ -98,3 +98,49 @@ Here is a suggestion for the dimensions of the netcdf file:
 * lon: 26
 * run: 3
 * time: depending on period
+
+If daily input is not possible, monthly output would also be valuable.
+
+## Available climate data
+
+Please check the meaning of the variables here: https://www.cesm.ucar.edu/community-projects/lens2/output-variables
+
+### Daily
+* FLDS
+* FLNS
+* FSDS
+* FSNS
+* LHFLX
+* PS
+* PSL
+* QREFHT
+* RHREFHT
+* SHFLX
+* TOTPREC
+* TREFHT
+* TREFHTMN
+* TREFHTMX
+* U
+* U10
+* V
+* V10
+* Z500
+
+### Monthly land (in CLM_mon_* files)
+* COL_FIRE_CLOSS
+* GPP
+* GR
+* HR
+* NBP
+* NEE
+* NEP
+* NPP
+* Q2M
+* RH2M
+* TOTLITC
+* TOTSOILLIQ
+* TOTSOMC
+* TOTVEGC
+* TSA
+* TWS
+
